@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")/
+    title Probando API Google Sheet
+  body
+    div
+      form(method="post" action="/form")
+        div
+          label(for="titulo") Fecha y hora:
+          p 
+            input(type="text" placeholder="Escribe la fecha y hora del registro" name="fecha_hora")
+        div
+          label(for="puntuacion") Puntuación:
+          p 
+            input(type="number" placeholder="Escribe la puntuación del registro" name="puntuacion")
+        div
+          label(for="nombres_apellidos") Nombres y apellidos:
+          p 
+            input(type="text" placeholder="Escribe los nombres y apellidos del registro" name="nombres_apellidos")
+        div
+          label(for="correo") Correo:
+          p 
+            input(type="email" placeholder="Escribe el correo del registro" name="correo")
+        div
+          label(for="dni") DNI:
+          p 
+            input(type="number" placeholder="Escribe el dni del registro" name="dni")
+        div
+          button(type="submit") Guardar

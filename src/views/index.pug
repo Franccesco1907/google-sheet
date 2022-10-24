@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")/
+    title Videos 10 minutos programando
+  body
+    div
+      ul
+        each register, index in registers 
+          li #{register.fecha_hora + ' - ' + register.puntuacion + ' - ' + register.nombres_apellidos + ' - ' + register.correo + ' - ' + register.dni}
+      hr
+      p 
+        a(href="/form") Ingresar Nuevo
